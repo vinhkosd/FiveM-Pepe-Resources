@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+	<startFrom value="2000"/>
+	<proxies>
+		<!-- Hospital -->
+		<Item>gabz_pillbox_dlc_milo_</Item>
+		<Item>gabz_pillbox_ext</Item>
+		<Item>gabz_pillbox_milo_</Item>
+		<Item>hei_dt1_06_long_0</Item>
+		<Item>hei_dt1_06_strm_0</Item>
+		<Item>hei_dt1_occl_07</Item>
+		<Item>hei_dt1_rd1_long_1</Item>
+		<Item>hei_dt1_rd1_strm_4</Item>
+		<Item>hei_fwy_04_strm_0</Item>
+		<!-- CityHall -->
+		<Item>bh1_occl_05</Item>
+		<Item>int_gover_qt_miracle_sec</Item>
+		<!-- Court -->
+		<Item>hei_dt1_rd1_long_1</Item>
+		<Item>hei_dt1_24_strm_0</Item>
+		<Item>hei_dt1_occl_04</Item>
+		<Item>hei_dt1_rd1_strm_5</Item>
+		<Item>qnx_jud_milo_</Item>
+		<!-- Prison -->
+		<Item>bobo_prison_milo_</Item>
+		<Item>hei_ch3_occl_03</Item>
+		<Item>lr_cs6_04_critical_0</Item>
+		<Item>lr_cs6_04_critical_2</Item>
+		<Item>lr_cs6_04_long_3</Item>
+		<Item>lr_cs6_04_strm_3</Item>
+		<Item>bobo_prison_lobby_milo_</Item>
+		<!-- Stores -->
+		<Item>cs1_occl_10</Item>
+		<Item>gabz_hei_hw1_02_interior_v_shop_247_milo_</Item>
+		<Item>gabz_hei_sm_10_interior_v_gen_liquor_milo_</Item>
+		<!-- Weazel News -->
+		<Item>int_wnews_garag_milo_</Item>
+		<Item>int_wnews_milo_</Item>
+		<!-- MRPD -->
+		<Item>gabz_mrpd_milo_</Item>
+		<Item>apa_distlodlights_medium019</Item>
+		<Item>apa_distlodlights_small029</Item>
+		<Item>apa_lodlights_medium019</Item>
+		<Item>apa_lodlights_small029</Item>
+		<Item>gabz_mrpd_ext</Item>
+		<Item>hei_ch3_04_strm_0</Item>
+		<Item>hei_dt1_19</Item>
+		<Item>hei_dt1_19_critical_0</Item>
+		<Item>hei_dt1_19_interior_0_heist_police_dlc_milo_</Item>
+		<Item>hei_dt1_19_strm_0</Item>
+		<Item>hei_dt1_occl_05</Item>
+		<Item>hei_dt1_rd1_critical_1</Item>
+		<Item>hei_dt1_rd1_strm_5</Item>
+		<Item>hei_dt1_rd1_strm_6</Item>
+		<Item>hei_dt1_rd1_strm_7</Item>
+		<Item>hei_id2_occl_00</Item>
+		
+		<Item>h3fty_medical_01_milo_</Item>
+
+		<!-- Car Dealer -->
+		<Item>hei_bh1_13_strm_0</Item>
+		<Item>int_luxury_milo_</Item>
+		<!-- Digital Den -->
+		<Item>kt1_occl_03</Item>
+		<Item>int_magazel1_milo_</Item>
+		<Item>vespucci_burgershot_milo_</Item>
+		<Item>hei_vb_03</Item>
+		<Item>vb_occl_01</Item>
+		<Item>hei_vb_03_strm_0</Item>
+		<Item>vb_03_strm_0</Item>
+
+		<Item>apa_ss1_occl_01</Item>
+		<Item>breze_benefactor_milo_</Item>
+		<Item>hei_ss1_occl_01</Item>
+		<!-- Kroeg -->
+
+	</proxies>
+</SInteriorOrderData>
