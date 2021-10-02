@@ -1,0 +1,187 @@
+body {
+ overflow: hidden;
+ user-select: none;
+ font-weight: 600;
+ font-family: 'Courier New', Courier, monospace
+}
+
+.light-containter {
+ display: none;
+ position: absolute;
+ bottom: -10vh;
+ left: 63vh;
+ width: 64vh;
+ height: 9vh;
+ background-color: rgba(0, 0, 0, 0.5);
+ border-radius: 15px;
+}
+
+.light-button {
+ background-color: rgba(0, 0, 0, 0.6);
+ width: 5vh;
+ height: 5vh;
+ border-radius: 50px;
+ border: 2px solid white;
+}
+
+.light-button > p {
+ color: white;
+ margin-top: 1.4vh;
+ margin-left: 1.8vh;
+ font-size: 2vh;
+}
+
+.light-icon {
+ position: relative;
+ float: left;
+ margin-left: 3.3vh;
+ margin-top: 2.0vh;
+}
+
+[data-button="volg"] {
+ margin-top: .2vh;
+ margin-left: -0.17vh;
+}
+
+[data-button="stop"] {
+ margin-left: -0.17vh;
+}
+
+[data-button="siren"] {
+ margin-top: .1vh;
+ margin-left: -0.33vh;
+}
+
+[data-button="pitje"] {
+    margin-left: .1vh;
+}
+
+.light-button:hover {
+ background-color: rgba(0, 0, 0, 0.274);
+ border-color: rgba(255, 255, 255, 0.507);
+}
+
+.tooltiptext {
+ visibility: hidden;
+ width: 120px;
+ background-color: rgba(61, 60, 60, 0.582);
+ color: #fff;
+ text-align: center;
+ padding: 5px 0;
+ border-radius: 6px;
+ position: absolute;
+ z-index: 1;
+ bottom: 125%;
+ left: 50%;
+ margin-left: -60px;
+ opacity: 0;
+ transition: opacity 0.3s;
+}
+  
+.tooltiptext::after {
+ content: "";
+ position: absolute;
+ top: 100%;
+ left: 50%;
+ margin-left: -5px;
+ border-width: 5px;
+ border-style: solid;
+ border-color: rgba(61, 60, 60, 0.582) transparent transparent transparent;
+}
+  
+.light-button:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.clicked-light {
+    background-color: #1e992ebc;
+}
+
+.clicked-light-1 {
+    animation: Emergency-1 2s infinite;
+}
+
+.clicked-light-2 {
+    animation: Emergency-2 2s infinite;
+}
+
+.clicked-light-3 {
+    animation: Emergency-3 2s infinite;
+}
+
+.clicked-light-4 {
+    animation: Emergency-4 2s infinite;
+}
+
+@keyframes Emergency-1 {
+    0% { 
+        background-color: #1e3799bc;
+    }
+    25% { 
+        background-color: #1e6c99bc;
+    }
+    50% { 
+        background-color: #301899bc;
+    }
+    75% { 
+        background-color: #1e6c99bc;
+    }
+    100% { 
+        background-color: #1e3799bc;
+    }
+}
+
+@keyframes Emergency-2 {
+    0% { 
+        background-color: #99591ebc;
+    }
+    25% { 
+        background-color: #997c1ebc;
+    }
+    50% { 
+        background-color: #99591ebc;
+    }
+    75% { 
+        background-color: #997c1ebc;
+    }
+    100% { 
+        background-color: #99591ebc;
+    }
+}
+
+@keyframes Emergency-3 {
+    0% { 
+        background-color: #1e992ebc;
+    }
+    25% { 
+        background-color: #156d1cbc;
+    }
+    50% { 
+        background-color: #1e992ebc;
+    }
+    75% { 
+        background-color: #156d1cbc;
+    }
+    100% { 
+        background-color: #1e992ebc;
+    }
+}
+
+@keyframes Emergency-4 {
+    0% { 
+        background-color: #991e1ebc;
+    }
+    25% { 
+        background-color: #5d1111bc;
+    }
+    50% { 
+        background-color: #991e1ebc;
+    }
+    75% { 
+        background-color: #5d1111bc;
+    }
+    100% { 
+        background-color: #991e1ebc;
+    }
+}

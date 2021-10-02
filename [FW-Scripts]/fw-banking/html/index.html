@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+    <body>
+        <div class='account-data-multi'>
+            <div class="bank-multiuser-list">
+                   <div class="bank-add-user-modal">
+                       <div class="add-user-container">
+                           <!-- <form> -->
+                               <input class="add-account-bsn" type="text" placeholder="BSN Nummer...">
+                           <!-- </form> -->
+                           <button id="submit-add" type="submit"><i class="fas fa-arrow-right"></i></button>
+                           <button id="cancel-add" type="submit"><i class="fas fa-times"></i></button>
+                       </div>
+                   </div>
+                <ul>
+                    <div id='char-slot-0' data-citizenid=''>
+                    </div>
+                    
+                    <div id='char-slot-1' data-citizenid=''>
+                    </div>
+    
+                    <div id='char-slot-2' data-citizenid=''>
+                    </div>
+    
+                    <div id='char-slot-3' data-citizenid=''>
+                    </div>
+
+                    <div id='char-slot-4' data-citizenid=''>
+                    </div>
+                    
+                    <div class="bank-add-user">
+                        <li class="bank-user-rounded">
+                            <i class="fas fa-plus"></i>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+          </div>
+        <div class="select-container">
+        <div class="loader"></div>
+            <div class="select-container-hide">
+            <div class="whitespace"></div>
+            <div class="account-card" id='private' data-saldo='' data-bankid ='' data-slot='private'>
+                <div class="account-card-container">
+                    <div style="padding-left:8px;padding-top: 10px;float:left;">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div style="padding-left:60px;">
+                        <p id="account-name" class="account-name">+</p>
+                        <p id="account-number" class="account-number">+</p>
+                        <p id="account-amount" class="account-amount">+</p>
+                    </div>
+                </div>
+            </div>
+            <h5><i class="fas fa-money-check"></i> Andere rekening(en)</h5>
+            <div class="bottom-border"></div>
+              <div class="personal-accounts">
+              </div>
+            <h5><i class="fas fa-users"></i> Gezamelijke rekening(en)</h5>
+            <div class="bottom-border"></div>
+              <div class='shared-accounts'>
+              </div>
+            <button type="submit" id="logout" class="bank-button-logout"><i class="fas fa-sign-out-alt"></i> Uitloggen</button>
+            </div>
+        </div>
+        <div class="bank-container">
+            <div class="bank-container-hide">
+                <div class="bank-user-container">
+                <div class='firstname'><p>Welkom terug, <b>Unknown</b>.</p></div>
+                <div class='bankid'><p>Geselecteerde rekening: Geen Rekening Gevonden..</p></div>
+                    <div class="bank-main-whitespace"></div>
+                    <div class="bank-main-amount">
+                        <p>Beschikbaar saldo</p>
+                        Geen Saldo Gevonden..
+                    </div>
+                </div>
+                <div class="bank-main-container">
+                    <div class="left">
+                            <!-- <form class="bank-actions"> -->
+                              <input class="bank-form" type="number" placeholder="Hoeveelheid...">
+                            <!-- </form> -->
+                            <div class="bank-buttons">
+                                <button class="bank-number-button" data-value=1>1</button>
+                                <button class="bank-number-button" data-value=2>2</button>
+                                <button class="bank-number-button" data-value=3>3</button>
+                                <button class="bank-number-button" data-value=4>4</button>
+                                <button class="bank-number-button" data-value=5>5</button>
+                                <button class="bank-number-button" data-value=6>6</button>
+                                <button class="bank-number-button" data-value=7>7</button>
+                                <button class="bank-number-button" data-value=8>8</button>
+                                <button class="bank-number-button" data-value=9>9</button>
+                                <button class="bank-number-button button-backspace" data-value="clear"><i class="fas fa-backspace"></i></button>
+                                <button class="bank-number-button" data-value=0>0</button>
+                                <button class="bank-number-button" data-value=null>--</button>
+                            </div>
+                            <button id="withdraw" class="bank-actions-button bank-withdraw"><i class="fas fa-arrow-circle-down"></i> Opnemen</button>
+                            <button id="deposit" class="bank-actions-button bank-deposit"><i class="fas fa-arrow-circle-up"></i> Storten</button>
+                    </div>
+                </div>
+                
+                <div class="right">
+                    <div class="bank-transaction-container">
+                        <h5><i class="fas fa-history"></i> Recente transacties</h5>
+                        <div class="bottom-border"></div>
+                        <div id="transactions">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bank-card-create-holder">
+            <div class="card-create-container">
+                <h4>Nieuwe rekening aanmaken</h4>
+                <div class="h4-title-border"></div>
+                <p>Vul onderstaande gegevens in om een nieuwe rekening aan te maken.</p>
+
+                <!-- <form> -->
+                    <input type="text" class="card-create-input" placeholder="Rekeningnaam...">
+                    <p class="text-muted">Je kan een maximum van 2 eigen rekeningen maken en 1 gezamelijke rekening.</p>
+                <!-- </form> -->
+                <div class="card-create-actions">
+                    <button id='create-account' class="card-create-button button-create"><i class="fas fa-check"></i></button>
+                    <button id='cancel-account' class="card-create-button button-decline"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+    <script type="text/javascript" src="./js/script.js"></script>
+</html>

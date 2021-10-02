@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+    <body>
+    <div class="multichar-container">
+        <div class="play-select-container">
+          <div class="play-button"><p>Chọn nhân vật</p></div>
+    	  <div class="delete-button"><p>Xóa</p></div>
+        </div>
+        <div class="new-char-container">
+            <input class="text-input-name" type="text" placeholder="Tên">
+            <input class="text-input-lastname" type="text" placeholder="Họ">
+            <input class="text-input-birthdate" type="date" placeholder="Ngày sinh" min="1900-01-01" max="2000-12-31">
+            <select class="text-input-gender" name="gender">
+                <option value="man" selected>Nam</option>
+                <option value="vrouw">Nữ</option>
+            </select>
+            <div class="submit-button"><p>Xác nhận</p></div>
+            <div class="cancel-button"><p>Hủy bỏ</p></div>
+        </div>
+        <div class='multichar-cards-container'>
+            <div class="multichar-card" id="char-1" data-citizenid="" data-charslot="1">
+                <p>Nhân vật mới</p>
+                <span class="tooltiptext">Tạo</span>
+            </div>
+            <div class="multichar-card" id="char-2" data-citizenid="" data-charslot="2">
+                <p>Nhân vật mới</p>
+                <span class="tooltiptext">Tạo</span>
+            </div>
+            <div class="multichar-card" id="char-3" data-citizenid="" data-charslot="3">
+                <p>Nhân vật mới</p>
+                <span class="tooltiptext">Tạo</span>
+            </div> 
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/script.js"></script>
+    </body>
+</html>

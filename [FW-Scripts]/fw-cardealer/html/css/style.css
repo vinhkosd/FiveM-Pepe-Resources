@@ -1,0 +1,274 @@
+
+body {
+ user-select: none;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+  position: relative;
+  display: none;
+  left: -180vh;
+}
+
+.tablet-frame {
+ position: absolute; 
+ pointer-events: none;
+ margin: 0 auto; 
+ left: 0; 
+ right: 0; 
+ top: 2.5vh; 
+ width: 80vw;
+ height: 89vh;
+}
+
+.inside-tablet {
+  position: absolute;
+  top: 9.1vh;
+  left: 13.5vw;
+  width: 72vw;
+  height: 75.5vh;
+  border-radius: 7px;
+  background-color: rgb(42, 42, 42);
+  box-shadow: 2px 2px 2px rgb(5, 5, 5);
+}
+
+.side-bar {
+  position: absolute;
+  width: 9vw;
+  height: 75vh;
+  background-color: rgb(116, 116, 116);
+}
+
+.menu-item {
+  position: relative;
+  top: 13vh;
+  width: 9vw;
+  height: 4vh;
+  background-color: white;
+  box-shadow: 0px 0px 6px rgb(5, 5, 5);
+}
+
+.menu-item > p {
+  font-size: 2vh;
+  font-weight: 650;
+  line-height: 4vh;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.829);
+}
+
+.block-logo {
+  position: absolute;
+  height: 15vh;
+  width: 9vw;
+  background-color: rgb(46, 46, 46);
+}
+
+.block-logo > i {
+  color: white;
+  font-size: 10vh;
+  margin-top: 1.5vh;
+  margin-left: 1.7vw;
+  text-shadow: 2px 2px 2px #000000;
+}
+.block-logo > p {
+  color: white;
+  font-size: 2vh;
+  margin-top: 0.1vh;
+  margin-left: 2vw;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.cardealer-block {
+  position: absolute;
+  top: 3vh;
+  left: 25vh;
+  width: 56vw;
+  height: 69vh;
+  float: left;
+  border-radius: 5px;
+  background-color: rgb(163, 163, 163);
+}
+
+.stock-block {
+  position: absolute;
+  top: 3vh;
+  left: 25vh;
+  width: 56vw;
+  height: 69vh;
+  float: left;
+  border-radius: 5px;
+  background-color: rgb(163, 163, 163);
+  overflow-x: auto;                  
+  overflow-y: auto;
+}
+
+.sold-block {
+  position: absolute;
+  top: 3vh;
+  left: 25vh;
+  width: 56vw;
+  height: 69vh;
+  float: left;
+  border-radius: 5px;
+  background-color: rgb(163, 163, 163);
+}
+
+.car-slot {
+  position: relative;
+  top: 5vh;
+  left: 10vh;
+  background-color: rgb(49, 49, 49);
+  margin-right: 10vh;
+  margin-bottom: 3vh;
+  float: left;
+  width: 20vw;
+  height: 18vh;
+  border-radius: 5px;
+}
+
+.car-slot > i {
+  position: absolute;
+  top: 5vh;
+  left: 15vh;
+  font-size: 5vh;
+  color: white;
+}
+
+.corner-number {
+  position: absolute;
+  height: 2.5vh;
+  width: 1vw;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 12px;
+  background-color: white;
+}
+
+.corner-number > p {
+  position: absolute;
+  font-weight: 600;
+  left: 0.3vh;
+  top: -1.75vh;
+  font-size: 1.9vh;
+  text-align: center;
+}
+
+.car-slot:hover {
+  background-color: rgba(49, 49, 49, 0.842);
+}
+
+.input-vehicle {
+ position: absolute;
+ top: 2vh;
+ left: 3vh;
+ width: 21.5vh;
+ height: 3vh;
+ font-size: 1.5vh;
+ font-family: 'Lato', sans-serif;
+ border-radius: 10px;
+}
+
+.stock-cards {
+  float: left;
+  width: 12.4vw;
+  height: 30vh;
+  margin-left: 5.5vh;
+  margin-right: 3vh;
+  margin-top: 4.5vh;
+  margin-bottom: 1vh;
+  border-radius: 15px;
+  background-color: rgb(71, 71, 71);
+}
+
+.stock-cards > p {
+  font-size: 1.5vh;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px #000000;
+ }
+
+.stock-img {
+  width: 10.2vw;
+  height: 16vh;
+  border-radius: 5px;
+  margin-top: 2vh;
+  margin-left: 2vh;
+}
+
+.slot-img {
+  width: 15vw;
+  height: 15.5vh;
+  border-radius: 5px;
+  margin-top: 1vh;
+  margin-left: 5.5vh;
+}
+
+.choose-slot-vehicle {
+  position: absolute;
+  display: none;
+  bottom: -6vh;
+  left: 62.5vh;
+  width: 28vh;
+  height: 13vh;
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: rgb(71, 71, 71);
+}
+
+.subit-button {
+ position: absolute;
+ left: 3vh;
+ bottom: 3vh;
+ width: 10vh;
+ height: 3vh;
+ border-radius: 7px;
+ border: 2px solid white;
+ background-color: green;
+}
+
+.subit-button:hover {
+ background-color: rgb(41, 172, 41);
+}
+
+.subit-button > p {
+  text-align: center;
+  color: white;
+  margin-top: 0.8vh;
+}
+
+.cancel-button {
+ position: absolute;
+ left: 14.5vh;
+ bottom: 3vh;
+ width: 10vh;
+ height: 3vh;
+ border-radius: 7px;
+ border: 2px solid white;
+ background-color: rgb(180, 21, 21);
+}
+
+.cancel-button:hover {
+ background-color: rgb(209, 47, 47);
+}
+
+.cancel-button > p {
+  color: white;
+  margin-top: 0.8vh;
+  text-align: center;
+}
+
+::-webkit-scrollbar-track {
+ background-color: rgba(245, 245, 245, 0.089);
+}
+  
+::-webkit-scrollbar{
+ width: 0.7vh;
+ background-color: rgba(245, 245, 245, 0.089);
+}
+  
+::-webkit-scrollbar-thumb {
+ background-color: rgb(59, 59, 59);
+}

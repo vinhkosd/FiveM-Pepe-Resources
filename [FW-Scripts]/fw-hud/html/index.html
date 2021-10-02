@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+    <body>
+        <div class='main-money-container'>
+            <div class="current-money plus">€ <span class="reset-color">500</span></div>
+            <div class="money-container">
+                <!-- Generated -->
+            </div>
+        </div>
+        <div class="hud-container">
+                 <div class="hud-bars-container"></div>
+                     <div class="border"><i class="fas fa-plus-circle"></i></div>
+                     <div class='ui-healthbar'>
+                         <div class="hud-barfill health"></i></div>
+                     </div>
+                     <div class="border"><i class="fas fa-shield-alt"></i></div>
+                     <div class='ui-armorbar'>
+                         <div class="hud-barfill stress"></i></div>
+                     </div>
+                     <div class="border"><i class="fas fa-drumstick-bite"></i></div>
+                     <div class='ui-foodbar'>
+                         <div class="hud-barfill food"></i></div>
+                     </div>
+                     <div class="border"><i class="fas fa-beer beer"></i></div>
+                     <div class='ui-waterbar'>
+                         <div class="hud-barfill water"></div>
+                     </div>
+                     <div class="border"><i class="fas fa-brain"></i></div>
+                     <div class='ui-stressbar'>
+                         <div class="hud-barfill stress"></div>
+                     </div>
+                 </div>
+            <div class="map-border"></div>
+            <div class="voice-container">
+                <div class="voice-block" data-voicetype="1"></div>
+                <div class="voice-block" data-voicetype="2"></div>
+                <div class="voice-block" data-voicetype="3"></div>
+            </div>
+        </div>
+        <div class="vehicle-hud-container">
+            <div class="vehicle-time"><span class="time-text">00:00 </span><span class="info-label"> AM</span></div>
+            <div class="VehicleInfo Car-Speed">&nbsp;&nbsp;&nbsp;&nbsp;<span id="Speed-Number">100</span><span class="info-label"> KM/U</span></div>
+            <div class="VehicleInfo Car-Fuel">&nbsp;&nbsp;&nbsp;&nbsp;<span id="Fuel-Number">100</span><span class="info-label"> Fuel</span></div>
+            <div class="vehicle-belt">&nbsp;&nbsp;&nbsp;&nbsp;<img src="./img/belt.png"></div>
+            <div class="vehicle-street">Blokkenpark | Fantastic plaza</span></div>
+        </div>
+        <script type="text/javascript" src="./js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+body {
+    background-color: transparent !important;
+    overflow: hidden;
+}
+
+.template, .notification {
+    display: none;
+}
+
+.notif-container {
+    width: 20vw;
+    position: absolute;
+    top: 30vh;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.notification {
+    padding: 1vh;
+    width: calc(fit-content + 1vh);
+    margin: 4px;
+    padding: 10px;
+    font: caption;
+    font-size: 1.5vh;
+    font-weight: bold;
+    border-radius: 5px;
+    animation: bounceInLeft;
+    animation-duration: 2s;
+}
+
+.success {
+    background: #27ae60;
+    border-left: 3px solid #176236;
+    box-shadow: 1px 1px 6px rgb(5, 5, 5);
+    color: #fff;
+}
+
+.error {
+    background: #c0392b;
+    border-left: 3px solid #72140a;
+    box-shadow: 1px 1px 6px rgb(5, 5, 5);
+    color: #fff;
+}

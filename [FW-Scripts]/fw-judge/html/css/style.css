@@ -1,0 +1,53 @@
+.tablet-bg {
+ display: none; 
+ background: #ffffff; 
+ position: absolute; 
+ margin: 0 auto; 
+ left: 0; 
+ right: 0; 
+ top: 12vh; 
+ width: 70vw;
+ height: 70vh;
+}
+
+.tablet-frame {
+ display: none; 
+ pointer-events: none; 
+ position: absolute; 
+ margin: 0 auto; 
+ left: 0; 
+ right: 0; 
+ top: 2.5vh; 
+ width: 80vw;
+ height: 89vh;
+}
+
+.tablet-url {
+ display: none; 
+ position: absolute; 
+ margin: 0 auto; 
+ left: 0.35vh; 
+ right: 0; 
+ top: 9.3vh; 
+ width: 72vw;
+ height: 75vh;
+}
+
+.click {
+ display: none;
+ position: absolute;
+ color: rgb(255, 255, 255);
+ font-weight: 800;
+ width: 4vh;
+ height: 4vh;
+ top: 86vh;
+ margin: 0 auto;
+ left: 0;
+ right: 0;
+ text-align: center;
+ font-size: 24px;
+}
+  
+.click:hover {
+ color: rgba(255, 255, 255, 0.698);
+}

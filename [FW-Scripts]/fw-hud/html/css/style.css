@@ -1,0 +1,239 @@
+@font-face {
+ font-family: 'pdown';
+ src: url('pdown.ttf');
+}
+
+body {
+ user-select: none;
+ overflow: hidden;
+ font-family: 'Lato', sans-serif;
+}
+
+.money-container {
+ position: absolute;
+ top: 12.2vh;
+ right: 2vh;
+}
+
+.current-money {
+ position: absolute;
+ right: 2vh;
+ top: 10vh;
+ font-family: 'pdown';
+ font-weight: 400;
+ font-size: 29px;
+ color: white;
+ text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
+}
+
+.money {
+ margin-left: 1vh;
+ float: right;
+ font-family: 'pdown';
+ font-weight: 400;
+ font-size: 29px;
+ color: white;
+ text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+   
+.plus {
+ color: #277418;
+}
+   
+.minus {
+ color: #801e1f;
+}
+   
+.reset-color {
+ color: white;
+}
+
+.hud-container {
+ position: absolute;
+ display: none;
+ left: -4vh;
+ bottom: 2.7vh;
+}
+
+.map-border {
+ position: absolute;
+ display: none;
+ bottom: 3vh;
+ left: 2.5vh;
+ width: 24.5vh;
+ height: 15.5vh;
+ box-shadow: 1px 1px 12px rgb(5, 5, 5);
+ border: 5px solid rgb(138, 138, 138); 
+}
+
+.border {
+ position: absolute;
+ left: -0.3vh;
+ height: 2.1vh;
+ width: 3.28vh;
+ z-index: 101;
+ border-radius: 5px;
+ box-shadow: 1px 1px 2.5px rgb(5, 5, 5);
+ border: .3vh solid rgb(138, 138, 138);    
+}
+
+.border > i {
+ position: absolute;
+ color: white;
+ font-size: 1.7vh;
+ margin-top: .2vh;
+ margin-left: .8vh;
+ text-shadow: 1px 1px 2px #000000;
+}
+
+.ui-healthbar, .ui-foodbar, .ui-waterbar, .ui-armorbar, .ui-stressbar {
+ position: relative;
+ height: 2.35vh;
+ border-radius: 10px;
+ width: 3.5vh;
+ margin-bottom: .7vh;
+}
+
+.ui-healthbar > .hud-barfill {
+ background-color: #1f851c;
+}
+   
+.ui-armorbar > .hud-barfill {
+ background-color: #257197;
+}
+   
+.ui-foodbar > .hud-barfill {
+ background-color: #b96d17;
+}
+   
+.ui-waterbar > .hud-barfill {
+ background-color: #173d8f;
+}
+   
+.ui-stressbar > .hud-barfill {
+ background-color: #a82626;
+}
+
+.hud-barfill {
+ position: absolute;
+ max-height: 100%;
+ height: 100%;
+ width: 3.5vh;
+ border-radius: 1px;
+ transition: .4s ease-in-out;
+}
+
+.health {
+ left: -0.1vh;
+ bottom: -0.2vh;
+} 
+
+.food {
+ left: -0.1vh;
+ bottom: -0.2vh; 
+}
+
+.water {
+ left: -0.1vh;
+ bottom: -0.2vh;
+}
+
+.stress {
+ left: -0.1vh;
+ bottom: -0.2vh;
+}
+
+.armor {
+ left: -0.1vh;
+ bottom: -0.2vh;
+}
+
+.beer {
+ left: .2vh;
+}
+
+.voice-container {
+ position: absolute;
+ display: none;
+ bottom: 18.4vh;
+ left: -4vh;
+}
+
+.voice-block {
+ position: relative;
+ width: .8vh;
+ float: left;
+ height: .8vh;
+ margin-right: .4vh;
+ border-radius: 2px;
+ box-shadow: 1px 1px 3px rgb(5, 5, 5);
+ background-color: rgb(138, 138, 138);
+}
+
+.vehicle-time {
+ position: relative;
+ left: 1.4vh;
+}
+
+.vehicle-street {
+ position: absolute;
+ width: 100vh;
+ bottom: -2vh;
+ left: 1.4vh;
+}
+
+.vehicle-belt {
+ position: absolute;
+ top: -0.1vh;
+ left: 14.5vh;
+ width: 3vh;
+}
+
+.vehicle-belt > img {
+ width: 3vh;
+}
+
+.vehicle-hud-container {
+ position: absolute;
+ bottom: 4.2vh;
+ left: 31.8vh;
+ line-height: 3vh;
+ color: white;
+ font-size: 1.6vh;
+ font-weight: 650;
+ text-shadow: 1px 1px 0px #000000;
+}
+
+.info-label {
+ position: relative;
+ top: -.35vh;
+ font-size: 1vh;
+ text-shadow: 1px 1px 0px #000000;
+}
+
+.VehicleInfo {
+ position: relative;
+ float: left;
+}
+
+.Low {
+ animation: Low 4s infinite;
+}
+
+@keyframes Low {
+ 0% { 
+     background-color: #dd2929bc;
+ }
+ 25% { 
+     background-color: #7e1a1abc;
+ }
+ 50% { 
+     background-color: #dd2929bc;
+ }
+ 75% { 
+     background-color: #7e1a1abc;
+ }
+ 100% { 
+     background-color: #dd2929bc;
+ }
+}
